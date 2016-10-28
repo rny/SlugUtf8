@@ -22,6 +22,12 @@ $ composer require rny/slugutf8
 ## Usage
 
 ```
+use Rny\SlugUtf8\SlugUtf8;
+
+$slug = SlugUtf8::SlugUtf8($str);
+```
+
+```
 $slug = \Rny\SlugUtf8\SlugUtf8::SlugUtf8($str);
 ```
 
@@ -32,7 +38,7 @@ $options = array(
     'lowercase' => true,
     'replacements' => array(),
     'transliterate' => false,
-    'utf8_strip' => false,
+    'strip_non_utf8' => false,
 );
 $slug = \Rny\SlugUtf8\SlugUtf8::SlugUtf8($str, $options);
 ```
