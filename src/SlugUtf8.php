@@ -27,7 +27,7 @@ class SlugUtf8 {
       'lowercase' => true,
       'replacements' => array(),
       'transliterate' => false,
-      'utf8_strip' => false,
+      'strip_non_utf8' => false,
     );
     
     // Merge options
@@ -103,7 +103,7 @@ class SlugUtf8 {
     
     // Make sure string is in UTF-8 and strip invalid UTF-8 characters
     // normally we do not need this check because we know $str is utf-8
-    if ($options['utf8_strip']) {
+    if ($options['strip_non_utf8']) {
       $str = mb_convert_encoding((string)$str, 'UTF-8', mb_list_encodings());
     }
 
