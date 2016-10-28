@@ -5,9 +5,9 @@ SlugUtf8 is modified from https://gist.github.com/sgmurphy/3098978
 
 ## Highlights
 
-* Removes all special characters but keep UTF-8 charaters unchanged.
-* Support Chinese/Japanese.
-* Dot between numbers is unchanged, e.g.: 3.8.5
+* Removes all special characters but keeps UTF-8 charaters unchanged.
+* Support Chinese / Japanese.
+* Dot between numbers is unchanged, e.g. 3.8.5
 * Composer ready, PSR-4 compatible.
 * PHPUnit tested.
 

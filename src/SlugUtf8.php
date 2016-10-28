@@ -115,7 +115,7 @@ class SlugUtf8 {
       $str = str_replace(array_keys($char_map), $char_map, $str);
     }
 
-    // Replace dot, but keep dot between numbers, e.g. 3.0.8
+    // Replace dot not between numbers, keep dot between numbers, e.g. 3.0.8
     $str = preg_replace('/([^\d])\.+/u', '$1' . $options['delimiter'] . '$2', $str);
     $str = preg_replace('/\.+([^\d])/u', '$1' . $options['delimiter'] . '$2', $str);
     
