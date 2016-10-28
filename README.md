@@ -1,5 +1,7 @@
 # SlugUtf8
 
+[![Build Status](https://travis-ci.org/rny/SlugUtf8.svg?branch=master)](https://travis-ci.org/rny/SlugUtf8)
+
 SlugUtf8 is a simple library to generate friendly URL slug from a string. It keeps most of the UTF-8 charaters unchanged to better support Chinese/Japanese. 
 SlugUtf8 is modified from https://gist.github.com/sgmurphy/3098978 
 
