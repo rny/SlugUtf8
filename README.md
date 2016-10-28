@@ -1,2 +1,44 @@
 # SlugUtf8
-generate UTF-8 URL slug
+
+SlugUtf8 is a simple library to generate friendly URL slug from a string. It keeps most of the UTF-8 charaters unchanged to better support Chinese/Japanese. 
+SlugUtf8 is modified from https://gist.github.com/sgmurphy/3098978 
+
+## Highlights
+
+* Removes all special characters but keep UTF-8 charaters unchanged.
+* Support Chinese/Japanese.
+* Dot between numbers is unchanged, e.g.: 3.8.5
+* Composer ready, PSR-4 compatible.
+* PHPUnit tested.
+
+## Install
+
+Install `SlugUtf8` using Composer.
+
+```
+$ composer require rny/slugutf8
+```
+
+## Usage
+
+```
+$slug = \Rny\SlugUtf8\SlugUtf8::SlugUtf8($str);
+```
+
+```
+$options = array(
+    'delimiter' => '-',
+    'limit' => null,
+    'lowercase' => true,
+    'replacements' => array(),
+    'transliterate' => false,
+    'utf8_strip' => false,
+);
+$slug = \Rny\SlugUtf8\SlugUtf8::SlugUtf8($str, $options);
+```
+
+## Testing
+
+```
+$ composer test
+```

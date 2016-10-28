@@ -1,0 +1,25 @@
+{
+    "name": "rny/slugutf8",
+    "type": "library",
+    "description": "generate UTF-8 URL slug",
+    "license": "MIT",
+    "keywords": ["slug"],
+    "authors": [
+        {
+            "name": "RNY"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rny\\SlugUtf8\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit;",
+        "phpunit": "phpunit"
+    }
+}
